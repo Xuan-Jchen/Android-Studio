@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/tabbed_graph">
+
+    <include
+    android:id="@+id/drawer_graph"
+    app:graph="@navigation/drawer_graph"/>
+
+    <include
+        android:id="@+id/bottom_graph"
+        app:graph="@navigation/bottom_graph"/>
+
+    <include
+        android:id="@+id/tabbed_graph"
+        app:graph="@navigation/tabbed_graph"/>
+
+    <include
+        android:id="@+id/options_graph"
+        app:graph="@navigation/options_graph"/>
+
+</navigation>
