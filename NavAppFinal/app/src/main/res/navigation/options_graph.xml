@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/options_graph"
+    app:startDestination="@id/options1Fragment2">
+
+    <fragment
+        android:id="@+id/options1Fragment2"
+        android:name="com.example.navapp.Options1Fragment"
+        android:label="fragment_options1"
+        tools:layout="@layout/fragment_options1" />
+    <fragment
+        android:id="@+id/options3Fragment2"
+        android:name="com.example.navapp.Options3Fragment"
+        android:label="fragment_options3"
+        tools:layout="@layout/fragment_options3" />
+    <fragment
+        android:id="@+id/options2Fragment2"
+        android:name="com.example.navapp.Options2Fragment"
+        android:label="fragment_options2"
+        tools:layout="@layout/fragment_options2" />
+</navigation>
