@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/elementsListFragment">
+
+    <fragment
+        android:id="@+id/elementsListFragment"
+        android:name="com.example.recyclermvvm.ui.list.ElementsListFragment"
+        android:label="fragment_elements_list"
+        tools:layout="@layout/fragment_elements_list">
+        <action
+            android:id="@+id/action_list_to_detail"
+            app:destination="@id/elementDetailFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/elementDetailFragment"
+        android:name="com.example.recyclermvvm.ui.detail.ElementDetailFragment"
+        android:label="fragment_element_detail"
+        tools:layout="@layout/fragment_element_detail" >
+        <action
+            android:id="@+id/action_detail_to_list"
+            app:destination="@id/elementsListFragment"
+            app:popUpTo="@id/elementsListFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>
